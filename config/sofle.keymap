@@ -31,7 +31,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "default";
+            display-name = "Base";
 
             // ------------------------------------------------------------------------------------------------------------
             // | ESC |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | BKSPC |
@@ -41,11 +41,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7         &kp N8      &kp N9        &kp N0    &kp BSPC
-&kp GRAVE  &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y      &kp U          &kp I       &kp O         &kp P     &kp LBKT
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H      &kp J          &kp K       &kp L         &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_MUTE  &kp N      &kp M          &kp COMMA   &kp DOT       &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE     &kp ENTER   &mo RAISE  &kp BACKSPACE  &kp KP_DOT  &kp KP_COMMA
+&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7         &kp N8         &kp N9         &kp N0    &kp BSPC
+&kp GRAVE  &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y      &kp U          &kp I          &kp O          &kp P     &kp LBKT
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H      &kp J          &kp K          &kp L          &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_MUTE  &kp N      &kp M          &kp COMMA      &kp DOT        &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE     &kp ENTER   &mo RAISE  &kp BACKSPACE  &kp RIGHT_ALT  &kp RIGHT_GUI
             >;
 
             sensor-bindings =
@@ -54,7 +54,7 @@
         };
 
         lower_layer {
-            display-name = "lower";
+            display-name = "Lower";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@
         };
 
         raise_layer {
-            display-name = "raise";
+            display-name = "Raise";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
